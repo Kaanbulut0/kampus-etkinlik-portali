@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kampüs Etkinlik ve Kulüp Portalı</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="campus-header">
+        <div class="container nav-wrap">
+            <a href="../index.html" class="vitrin-link"><i class="fa-solid fa-arrow-left"></i> Vitrin</a>
+            <h1><i class="fa-solid fa-graduation-cap"></i> Kampüs Etkinlik Portalı</h1>
+            <nav>
+                <ul>
+                    <li><a href="#takvim">Etkinlik Takvimi</a></li>
+                    <li><a href="#kulupler">Öğrenci Kulüpleri</a></li>
+                    <li><a href="#basvuru">Katılım Formu</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="takvim" class="panel">
+            <h2><i class="fa-solid fa-calendar-days"></i> Yaklaşan Kampüs Etkinlikleri</h2>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tarih</th>
+                            <th>Etkinlik Adı</th>
+                            <th>Düzenleyen Kulüp</th>
+                            <th>Konum</th>
+                            <th>Durum</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>25 Kasım 2026</td>
+                            <td>Web Geliştirme &amp; GitHub Atölyesi</td>
+                            <td>Bilişim ve Yazılım Kulübü</td>
+                            <td>Mühendislik Binası Lab-2</td>
+                            <td><span class="status open">Kayıt Açık</span></td>
+                        </tr>
+                        <tr>
+                            <td>28 Kasım 2026</td>
+                            <td>Kariyer Günleri ve Mezun Buluşması</td>
+                            <td>Kariyer ve Girişimcilik Kulübü</td>
+                            <td>Ana Konferans Salonu</td>
+                            <td><span class="status open">Kayıt Açık</span></td>
+                        </tr>
+                        <tr>
+                            <td>02 Aralık 2026</td>
+                            <td>Kampüs Akustik Müzik Gecesi</td>
+                            <td>Müzik ve Sanat Topluluğu</td>
+                            <td>Kültür Merkezi</td>
+                            <td><span class="status full">Kontenjan Dolu</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="kulupler" class="panel">
+            <h2><i class="fa-solid fa-users"></i> Aktif Öğrenci Kulüpleri</h2>
+            <div class="clubs-grid">
+                <div class="club-card">
+                    <h3>Bilişim ve Yazılım Kulübü</h3>
+                    <p>Haftalık algoritma çalışmaları, hackathon etkinlikleri ve açık kaynak proje geliştirme buluşmaları.</p>
+                </div>
+                <div class="club-card">
+                    <h3>Tasarım ve Dijital Sanatlar</h3>
+                    <p>UI/UX tasarım atölyeleri, grafik tasarım sergileri ve yaratıcı medya projeleri.</p>
+                </div>
+                <div class="club-card">
+                    <h3>Doğa Sporları ve Gezi</h3>
+                    <p>Hafta sonu doğa yürüyüşleri, kamp etkinlikleri ve çevre bilinci projeleri.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="basvuru" class="panel">
+            <h2><i class="fa-solid fa-file-signature"></i> Etkinlik Kayıt Formu</h2>
+            <form class="event-form">
+                <div class="row">
+                    <label for="student-name">Ad Soyad:</label>
+                    <input type="text" id="student-name" required placeholder="Adınız ve Soyadınız">
+                </div>
+                <div class="row">
+                    <label for="student-no">Öğrenci Numarası:</label>
+                    <input type="text" id="student-no" required placeholder="Örn: 202612345">
+                </div>
+                <div class="row">
+                    <label for="event-select">Katılmak İstediğiniz Etkinlik:</label>
+                    <select id="event-select">
+                        <option>Web Geliştirme &amp; GitHub Atölyesi</option>
+                        <option>Kariyer Günleri ve Mezun Buluşması</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-register">Kaydı Tamamla</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Öğrenci İşleri ve Kültür Daire Başkanlığı &copy; 2026</p>
+    </footer>
+</body>
+</html>
